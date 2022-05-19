@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="/WebContent/imgs/favicon.ico">
+<!--reset 스타일 시트 -->
+<link rel="stylesheet" type="text/css" href="/WebContent/asset/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/WebContent/jq/jq01/css04.css">
+<!--스타일 시트 -->
+<style type="text/css">
+</style>
+<title>Insert title here</title>
+<!-- jquery -->
+<script type="text/javascript" src="/WebContent/asset/js/jquery-1.12.4.js"></script>
+<!--자바스크립트 코드 -->
+<script type="text/javascript" src="/WebContent/jq/jq01/js04.js"></script>
+</head>
+<body>
+    <h2>폼 필터</h2>
+    <hr/>
+    <div id="vis">내용1</div>
+    <div>내용2</div>
+
+    <form action="#" method="get" name="frm">
+        <div>
+            <input type="text" id="user_id" name="user_id">
+        </div>
+        <div>
+            <input type="password" id="pass" name="pass">
+        </div> 
+        <div>
+            <input type="checkbox" id="check01" name="check01" checked>
+            <label for="check01">jQuery</label>
+        </div>
+        <div>
+            <button id="save">확인</button>
+        </div>
+        <div>
+            <select name="subject" id="subject">
+                <option value="">전체</option>
+                <option value="10">JAVA</option>
+                <option value="20">ORACLE</option>
+                <option value="30">HTML</option>
+                <option value="40">CSS</option>
+                <option value="50">JAVASCRIPT</option>
+                <option value="60" selected>JQUERY</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="contents" id="contents" cols="20" rows="5" disabled>jQuery</textarea>
+        </div>
+    </form>
+</body>
+</html>

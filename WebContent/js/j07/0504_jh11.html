@@ -1,0 +1,48 @@
+<!--HTML COMMENT-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="/WebContent/imgs/favicon.ico" type="image/x-icon">
+<!--스타일 시트-->
+<style type="text/css"> 
+    div{
+        height: 100px;
+        background-color: midnightblue;
+        margin-top: 20px;
+        color: white;
+    }
+</style>
+<!-- 자바스크립트 코드 -->
+<title>Insert title here</title>
+<script type = "text/javascript">
+    window.onload = function(){
+        // 클릭버튼 객체
+        let bt = document.getElementById("btn");
+        bt.onclick = function(event){
+            console.log(`event.target : ${event.target}`);
+            console.log(`event.type : ${event.type}`);
+
+            console.log(`event.clientX : ${event.clientX}`);
+            console.log(`event.clientY : ${event.clientY}`);
+
+            console.log(`event.screenX : ${event.screenX}`);
+            console.log(`event.screenY : ${event.screenY}`);
+        };
+
+        // div 객체
+        let divArea = document.getElementById("area");
+        divArea.onmousedown = function(e){
+            console.log(`e.button : ${e.button}`);
+        }
+    };
+</script>
+</head>
+<body>
+    <h2>이벤트 객체</h2>
+    <hr/>
+    <button id="btn">클릭</button>
+    <div id="area">여기에 마우스 왼쪽, 가운데, 오른쪽 버튼 클릭</div>
+</body>
+</html>

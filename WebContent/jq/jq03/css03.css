@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.subject{
+    border: 4px solid #f0fe00;
+    background: #718c00;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    line-height: 300px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    color: azure;
+}
+.tip{
+    width: 250px;
+    height: 30px;
+    background: #333;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    transition: opacity 0.3s ease;
+    opacity: 0; /*불투명 처리 : 0 ~ 1*/
+}
+.tip.on{
+    opacity: 0.8;
+}

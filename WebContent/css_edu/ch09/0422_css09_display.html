@@ -1,0 +1,44 @@
+<!--HTML COMMENT-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<!--자바스크립트 코드-->
+<script type = "text/javascript"></script>
+<title>Insert title here</title>
+<!--스타일 시트-->
+<style type="text/css">
+	li{
+		list-style-type: none;
+	}
+	.gnb > li{
+		display: inline;
+	}
+	.gnb > li > a{
+		text-decoration: none;
+		display: inline-block;
+		text-align: center; /* 좌우 가운데 정렬 */
+		width: 100px;
+		height: 35px;
+		line-height: 35px; /* 수직 가운데 정렬 : height, line-height 값이 동일 */
+		background: rgb(160, 116, 201);
+		color: rgb(225, 222, 222);
+	}
+	.gnb > li > a:hover{
+		background: rgb(74, 208, 123);
+		text-decoration: underline;
+	}
+</style>
+</head>
+<body>
+	<h2>display : 블록과 인라인 요소의 성격 변경</h2>
+	<hr/>
+	<ul class="gnb">
+		<li><a href="#">COMPANY</a></li>
+		<li><a href="#">PRODUCT</a></li>
+		<li><a href="#">SERVICE</a></li>
+		<li><a href="#">COMMUNITY</a></li>
+	</ul>
+</body>
+</html>

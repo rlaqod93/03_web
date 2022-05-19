@@ -1,0 +1,9 @@
+.bg{
+    padding: 40px;
+    margin-bottom: 40px;
+    background: #ccc;
+}
+.inner{
+    padding: 20px;
+    background: #999;
+}

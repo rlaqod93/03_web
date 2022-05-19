@@ -1,0 +1,135 @@
+2022-05-16 09:33:36,024 DEBUG [main] studyhtml5.Hello  (   Hello.java:8)     - ===================
+2022-05-16 09:33:36,025 DEBUG [main] studyhtml5.Hello  (   Hello.java:9)     - ======"Hello"=======
+2022-05-16 09:33:36,025 DEBUG [main] studyhtml5.Hello  (   Hello.java:10)     - ===================
+2022-05-16 12:20:15,324 DEBUG [main] cmn.PConnection   (PConnection.java:32)     - ClassNotFoundException : oracle.jdbc.driver.OracleDriver
+2022-05-16 12:20:15,326 DEBUG [main] board.BoardDao    (BoardDao.java:347)     - query : 
+ DELETE FROM BOARD 
+ WHERE SEQ = ?     
+
+2022-05-16 12:20:15,326 DEBUG [main] board.BoardDao    (BoardDao.java:348)     - param : BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-05-16 12:21:16,553 DEBUG [main] cmn.PConnection   (PConnection.java:29)     - connection : oracle.jdbc.driver.T4CConnection@783e6358
+2022-05-16 12:21:16,555 DEBUG [main] board.BoardDao    (BoardDao.java:347)     - query : 
+ DELETE FROM BOARD 
+ WHERE SEQ = ?     
+
+2022-05-16 12:21:16,555 DEBUG [main] board.BoardDao    (BoardDao.java:348)     - param : BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-05-16 12:21:16,629 DEBUG [main] board.BoardDao    (BoardDao.java:357)     - flag : 1
+2022-05-16 12:21:16,630 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:29)     - PreparedStatement 자원반납
+2022-05-16 12:21:16,630 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:41)     - Connection 자원반납
+2022-05-16 12:21:16,631 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - ==================
+2022-05-16 12:21:16,631 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - ======삭제 성공======
+2022-05-16 12:21:16,631 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - ==================
+2022-05-16 12:26:53,567 DEBUG [main] cmn.PConnection   (PConnection.java:29)     - connection : oracle.jdbc.driver.T4CConnection@783e6358
+2022-05-16 12:26:53,569 DEBUG [main] board.BoardDao    (BoardDao.java:192)     - query : 
+ SELECT A.SEQ,                                     
+        A.RNUM AS NUM,                             
+        A.TITLE,                                   
+        A.READ_CNT,                                
+        TO_CHAR(A.MOD_DT, 'YYYY/MM/DD') AS MOD_DT, 
+        A.MOD_ID                                   
+ FROM(                                             
+     SELECT ROWNUM AS RNUM, T1.*                   
+     FROM (                                        
+         SELECT *                                  
+         FROM BOARD                                
+WHERE seq LIKE ? || '%'         ORDER BY MOD_DT DESC                      
+     )T1                                           
+     WHERE ROWNUM <= (? * (? - 1) + ?)             
+ )A                                                
+ WHERE RNUM >= (? * (? - 1) + 1)                   
+
+2022-05-16 12:26:53,569 DEBUG [main] board.BoardDao    (BoardDao.java:193)     - param : SearchVO [searchDiv=10, searchWord=77, pageSize=30, pageNum=1, toString()=DTO [no=0]]
+2022-05-16 12:26:54,012 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:17)     - ResultSet 자원반납
+2022-05-16 12:26:54,012 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:29)     - PreparedStatement 자원반납
+2022-05-16 12:26:54,012 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:41)     - Connection 자원반납
+2022-05-16 12:26:54,013 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=77, title=제목77, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,014 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=770, title=제목770, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,014 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=771, title=제목771, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,014 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=772, title=제목772, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,014 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=773, title=제목773, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,014 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=774, title=제목774, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,014 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=775, title=제목775, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,015 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=776, title=제목776, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,015 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=777, title=제목777, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,015 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=778, title=제목778, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,015 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=779, title=제목779, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/13, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,015 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7700, title=제목7700, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,015 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7701, title=제목7701, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,015 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7702, title=제목7702, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,015 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7703, title=제목7703, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7704, title=제목7704, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7705, title=제목7705, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7706, title=제목7706, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7707, title=제목7707, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7708, title=제목7708, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7709, title=제목7709, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7710, title=제목7710, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7711, title=제목7711, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7712, title=제목7712, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7713, title=제목7713, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7714, title=제목7714, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7715, title=제목7715, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7716, title=제목7716, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7717, title=제목7717, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:26:54,016 DEBUG [main] board.BoardMain   (BoardMain.java:123)     - vo : BoardVO [seq=7718, title=제목7718, contents=null, readCnt=0, regDt=null, regId=null, modDt=2022/04/11, modId=ADMIN, toString()=DTO [no=0]]
+2022-05-16 12:27:07,786 DEBUG [main] cmn.PConnection   (PConnection.java:29)     - connection : oracle.jdbc.driver.T4CConnection@783e6358
+2022-05-16 12:27:07,788 DEBUG [main] board.BoardDao    (BoardDao.java:302)     - query : 
+ INSERT INTO board ( 
+     seq,            
+     title,          
+     contents,       
+     read_cnt,       
+     reg_id,         
+     mod_id          
+ ) VALUES (          
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?,              
+     ?               
+ )                   
+
+2022-05-16 12:27:07,788 DEBUG [main] board.BoardDao    (BoardDao.java:303)     - param : BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-05-16 12:27:07,853 DEBUG [main] board.BoardDao    (BoardDao.java:319)     - flag : 1
+2022-05-16 12:27:07,853 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:29)     - PreparedStatement 자원반납
+2022-05-16 12:27:07,853 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:41)     - Connection 자원반납
+2022-05-16 12:27:07,854 DEBUG [main] board.BoardMain   (BoardMain.java:25)     - ==================
+2022-05-16 12:27:07,854 DEBUG [main] board.BoardMain   (BoardMain.java:26)     - ======등록 성공======
+2022-05-16 12:27:07,855 DEBUG [main] board.BoardMain   (BoardMain.java:27)     - ==================
+2022-05-16 12:27:16,263 DEBUG [main] cmn.PConnection   (PConnection.java:29)     - connection : oracle.jdbc.driver.T4CConnection@783e6358
+2022-05-16 12:27:16,265 DEBUG [main] board.BoardDao    (BoardDao.java:347)     - query : 
+ DELETE FROM BOARD 
+ WHERE SEQ = ?     
+
+2022-05-16 12:27:16,265 DEBUG [main] board.BoardDao    (BoardDao.java:348)     - param : BoardVO [seq=900001, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-05-16 12:27:16,330 DEBUG [main] board.BoardDao    (BoardDao.java:357)     - flag : 1
+2022-05-16 12:27:16,330 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:29)     - PreparedStatement 자원반납
+2022-05-16 12:27:16,330 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:41)     - Connection 자원반납
+2022-05-16 12:27:16,331 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - ==================
+2022-05-16 12:27:16,331 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - ======삭제 성공======
+2022-05-16 12:27:16,331 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - ==================
+2022-05-16 15:38:21,032 DEBUG [main] cmn.PConnection   (PConnection.java:29)     - connection : oracle.jdbc.driver.T4CConnection@783e6358
+2022-05-16 15:38:21,034 DEBUG [main] board.BoardDao    (BoardDao.java:347)     - query : 
+ DELETE FROM BOARD 
+ WHERE SEQ = ?     
+
+2022-05-16 15:38:21,034 DEBUG [main] board.BoardDao    (BoardDao.java:348)     - param : BoardVO [seq=900003, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-05-16 15:38:21,110 DEBUG [main] board.BoardDao    (BoardDao.java:357)     - flag : 1
+2022-05-16 15:38:21,111 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:29)     - PreparedStatement 자원반납
+2022-05-16 15:38:21,111 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:41)     - Connection 자원반납
+2022-05-16 15:38:21,113 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - ==================
+2022-05-16 15:38:21,113 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - ======삭제 성공======
+2022-05-16 15:38:21,113 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - ==================
+2022-05-16 16:44:55,504 DEBUG [main] cmn.PConnection   (PConnection.java:29)     - connection : oracle.jdbc.driver.T4CConnection@735f7ae5
+2022-05-16 16:44:55,506 DEBUG [main] board.BoardDao    (BoardDao.java:347)     - query : 
+ DELETE FROM BOARD 
+ WHERE SEQ = ?     
+
+2022-05-16 16:44:55,506 DEBUG [main] board.BoardDao    (BoardDao.java:348)     - param : BoardVO [seq=900003, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-05-16 16:44:55,569 DEBUG [main] board.BoardDao    (BoardDao.java:357)     - flag : 1
+2022-05-16 16:44:55,570 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:29)     - PreparedStatement 자원반납
+2022-05-16 16:44:55,570 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:41)     - Connection 자원반납
+2022-05-16 16:44:55,572 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - ==================
+2022-05-16 16:44:55,572 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - ======삭제 성공======
+2022-05-16 16:44:55,572 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - ==================

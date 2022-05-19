@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<meta http-equiv="Expires" content="Mon, 01 Jan 2020 00:00:01 GMT"> 
+<!--위의 명시된 날짜 이후가 되면 페이지가 캐싱되지 않는다.(2020년 이후 쭉 ) --> 
+<meta http-equiv="Expires" content="-1"> 
+<!--캐시된 페이지가 만료되어 삭제되는 시간을 정의하나 특별한 경우가 아니면 -1로 설정--> 
+<meta http-equiv="Pragma" content="no-cache"> 
+<!--페이지 로드시마다 페이지를 캐싱하지 않는다.(HTTP 1.0)-->  
+<meta http-equiv="Cache-Control" content="no-cache"> 
+<!--페이지 로드시마다 페이지를 캐싱하지 않는다.(HTTP 1.1)--> 
+
+<style type="text/css">
+    .btn{
+        position: relative;
+        left: 425px;
+        background-color: cornflowerblue;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    td{
+        border: 1px solid black;
+    }
+    table{
+        border-collapse: collapse;
+        width: 400px;
+    }
+    .menu{
+        background-color: cornflowerblue;
+        color: white;
+        text-align: center;
+        width: 30%;
+    }
+    input, textarea{
+        border: none;
+    }
+</style>
+<title>test02</title>
+</head>
+<body>
+   <h4>게시-등록</h4>
+   <div>
+      <input class="btn" type="button" value="등록">
+      <input class="btn" type="button" value="목록">
+   </div>
+   <table>
+      <tr>
+        <td class="menu">제목</td>
+        <td><input type="text" size="50"></td>
+      </tr>
+      <tr>
+        <td class="menu">등록자</td>
+        <td><input type="text" size="50"></td>
+      </tr>
+      <tr>
+        <td class="menu">내용</td>
+        <td><input type="text" size="50"></td>
+      </tr>
+       <tr>
+        <td colspan="2"><textarea rows="30" cols="70" placeholder="내일 즐거운 목요일..."></textarea></td>
+      </tr>
+   </table>
+</body>
+</html>

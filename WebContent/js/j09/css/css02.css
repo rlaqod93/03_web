@@ -1,0 +1,16 @@
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    width: 600px;
+}
+.t_left{
+    text-align: left;
+}
+.t_center{
+    text-align: center;
+}
+.t_right{
+    text-align: right;
+}

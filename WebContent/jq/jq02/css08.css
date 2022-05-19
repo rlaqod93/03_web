@@ -1,0 +1,11 @@
+*{
+    margin: 5px;
+}
+input[type='text'].on{
+    background: #ff7700;
+    color: #ffffff;
+}
+p{
+    color: #ff0000;
+    display: none;
+}

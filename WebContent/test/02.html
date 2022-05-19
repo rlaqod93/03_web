@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<!--스타일 시트 -->
+<style type="text/css">
+    .btn{
+        position: relative;
+        left: 440px;
+        background-color: cornflowerblue;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    td{
+        border: 1px solid black;
+    }
+    table{
+        border-collapse: collapse;
+        width: 400px;
+    }
+    .menu{
+        background-color: cornflowerblue;
+        color: white;
+        text-align: center;
+        width: 200px;
+    }
+    input, textarea{
+        border: none;
+    }
+</style>
+<title>test2</title>
+</head>
+<body>
+    <h4>게시-등록</h4>
+   <div>
+      <input class="btn" type="button" value="등록">
+      <input class="btn" type="button" value="목록">
+   </div>
+   <table>
+      <tr>
+        <td class="menu">제목</td>
+        <td><input type="text" size="65"></td>
+      </tr>
+      <tr>
+        <td class="menu">등록자</td>
+        <td><input type="text" size="65"></td>
+      </tr>
+      <tr>
+        <td class="menu">내용</td>
+        <td><input type="text" size="65"></td>
+      </tr>
+       <tr>
+            <td colspan="2"><textarea rows="30" cols="70" placeholder="내일 즐거운 목요일..."></textarea></td>
+      </tr>
+   </table>
+</body>
+</html>

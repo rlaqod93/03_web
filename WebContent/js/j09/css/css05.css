@@ -1,0 +1,11 @@
+div{
+    position: fixed;
+    left: 100px;
+    top: 10px;
+    width: 200px;
+    height: 200px;
+    background: lightgreen;
+}
+.m1{
+    background: white;
+}

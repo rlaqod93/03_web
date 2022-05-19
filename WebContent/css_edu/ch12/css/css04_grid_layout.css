@@ -1,0 +1,33 @@
+.wrap{
+    display: grid;
+    /* 너비 side 30% content 70% */
+    grid-template-columns: 30% 70%;
+    /* 높이 header 50px side,content 200px footer 50px*/
+    grid-template-rows: 50px 200px 50px;
+}
+.wrap > div{
+    margin: 1px; 
+    padding: 10px; 
+    font-size: 20px;
+    border: 1px solid lightgrey;
+}
+.grid01{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: lightgreen;
+}
+.grid02{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background: lightpink;
+}
+.grid03{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background: lightblue;
+}
+.grid04{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: bisque;
+}

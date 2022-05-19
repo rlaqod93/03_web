@@ -1,0 +1,36 @@
+<!--HTML COMMENT-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="/WebContent/imgs/favicon.ico" type="image/x-icon">
+<!--스타일 시트-->
+<style type="text/css">	
+	
+</style>
+
+<title>Insert title here</title>
+<!--자바스크립트 코드-->
+<script type = "text/javascript">
+	window.onload = function(){
+		// a 객체
+		let pcwk = document.getElementById("pcwk");
+		pcwk.onclick = function(event){
+			// alert("PCWK");
+			// event.preventDefault();
+
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+	<h2>preventDefault()</h2>
+	<h5>기본 이벤트는 html요소 중 자바스크립트가 아닌 html요소 자체가 가지고 있는 이벤트를 막기</h5>
+	<hr/>
+	<div>
+		<a id="pcwk" href="https://cafe.daum.net/pcwk">PCWK</a>
+	</div>
+</body>
+</html>

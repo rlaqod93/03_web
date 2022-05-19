@@ -1,0 +1,84 @@
+2022-05-17 16:08:18,494 DEBUG [main] cmn.PConnection   (PConnection.java:29)     - connection : oracle.jdbc.driver.T4CConnection@735f7ae5
+2022-05-17 16:08:18,496 DEBUG [main] board.BoardDao    (BoardDao.java:348)     - query : 
+ DELETE FROM BOARD 
+ WHERE SEQ = ?     
+
+2022-05-17 16:08:18,496 DEBUG [main] board.BoardDao    (BoardDao.java:349)     - param : BoardVO [seq=4512322, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-05-17 16:08:18,564 DEBUG [main] board.BoardDao    (BoardDao.java:358)     - flag : 1
+2022-05-17 16:08:18,566 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:29)     - PreparedStatement 자원반납
+2022-05-17 16:08:18,566 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:41)     - Connection 자원반납
+2022-05-17 16:08:18,568 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - ==================
+2022-05-17 16:08:18,568 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - ======삭제 성공======
+2022-05-17 16:08:18,568 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - ==================
+2022-05-17 16:09:11,919 DEBUG [main] cmn.PConnection   (PConnection.java:29)     - connection : oracle.jdbc.driver.T4CConnection@735f7ae5
+2022-05-17 16:09:11,920 DEBUG [main] board.BoardDao    (BoardDao.java:348)     - query : 
+ DELETE FROM BOARD 
+ WHERE SEQ = ?     
+
+2022-05-17 16:09:11,920 DEBUG [main] board.BoardDao    (BoardDao.java:349)     - param : BoardVO [seq=1225235, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-05-17 16:09:11,981 DEBUG [main] board.BoardDao    (BoardDao.java:358)     - flag : 1
+2022-05-17 16:09:11,981 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:29)     - PreparedStatement 자원반납
+2022-05-17 16:09:11,982 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:41)     - Connection 자원반납
+2022-05-17 16:09:11,982 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - ==================
+2022-05-17 16:09:11,982 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - ======삭제 성공======
+2022-05-17 16:09:11,982 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - ==================
+2022-05-17 16:10:32,280 DEBUG [main] cmn.PConnection   (PConnection.java:29)     - connection : oracle.jdbc.driver.T4CConnection@735f7ae5
+2022-05-17 16:10:32,281 DEBUG [main] board.BoardDao    (BoardDao.java:348)     - query : 
+ DELETE FROM BOARD 
+ WHERE SEQ = ?     
+
+2022-05-17 16:10:32,281 DEBUG [main] board.BoardDao    (BoardDao.java:349)     - param : BoardVO [seq=3141433, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-05-17 16:10:32,344 DEBUG [main] board.BoardDao    (BoardDao.java:358)     - flag : 1
+2022-05-17 16:10:32,344 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:29)     - PreparedStatement 자원반납
+2022-05-17 16:10:32,344 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:41)     - Connection 자원반납
+2022-05-17 16:10:32,347 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - ==================
+2022-05-17 16:10:32,347 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - ======삭제 성공======
+2022-05-17 16:10:32,347 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - ==================
+2022-05-17 16:10:59,672 DEBUG [main] cmn.PConnection   (PConnection.java:29)     - connection : oracle.jdbc.driver.T4CConnection@735f7ae5
+2022-05-17 16:10:59,673 DEBUG [main] board.BoardDao    (BoardDao.java:348)     - query : 
+ DELETE FROM BOARD 
+ WHERE SEQ = ?     
+
+2022-05-17 16:10:59,673 DEBUG [main] board.BoardDao    (BoardDao.java:349)     - param : BoardVO [seq=3431242, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-05-17 16:10:59,735 DEBUG [main] board.BoardDao    (BoardDao.java:358)     - flag : 1
+2022-05-17 16:10:59,737 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:29)     - PreparedStatement 자원반납
+2022-05-17 16:10:59,737 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:41)     - Connection 자원반납
+2022-05-17 16:10:59,740 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - ==================
+2022-05-17 16:10:59,740 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - ======삭제 성공======
+2022-05-17 16:10:59,740 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - ==================
+2022-05-17 16:11:38,986 DEBUG [main] cmn.PConnection   (PConnection.java:29)     - connection : oracle.jdbc.driver.T4CConnection@735f7ae5
+2022-05-17 16:11:38,988 DEBUG [main] board.BoardDao    (BoardDao.java:348)     - query : 
+ DELETE FROM BOARD 
+ WHERE SEQ = ?     
+
+2022-05-17 16:11:38,988 DEBUG [main] board.BoardDao    (BoardDao.java:349)     - param : BoardVO [seq=4819818, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-05-17 16:11:39,048 DEBUG [main] board.BoardDao    (BoardDao.java:358)     - flag : 1
+2022-05-17 16:11:39,048 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:29)     - PreparedStatement 자원반납
+2022-05-17 16:11:39,048 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:41)     - Connection 자원반납
+2022-05-17 16:11:39,049 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - ==================
+2022-05-17 16:11:39,049 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - ======삭제 성공======
+2022-05-17 16:11:39,049 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - ==================
+2022-05-17 16:11:45,241 DEBUG [main] cmn.PConnection   (PConnection.java:29)     - connection : oracle.jdbc.driver.T4CConnection@735f7ae5
+2022-05-17 16:11:45,243 DEBUG [main] board.BoardDao    (BoardDao.java:348)     - query : 
+ DELETE FROM BOARD 
+ WHERE SEQ = ?     
+
+2022-05-17 16:11:45,243 DEBUG [main] board.BoardDao    (BoardDao.java:349)     - param : BoardVO [seq=7812451, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-05-17 16:11:45,305 DEBUG [main] board.BoardDao    (BoardDao.java:358)     - flag : 1
+2022-05-17 16:11:45,305 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:29)     - PreparedStatement 자원반납
+2022-05-17 16:11:45,305 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:41)     - Connection 자원반납
+2022-05-17 16:11:45,307 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - ==================
+2022-05-17 16:11:45,307 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - ======삭제 성공======
+2022-05-17 16:11:45,307 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - ==================
+2022-05-17 16:11:50,264 DEBUG [main] cmn.PConnection   (PConnection.java:29)     - connection : oracle.jdbc.driver.T4CConnection@735f7ae5
+2022-05-17 16:11:50,265 DEBUG [main] board.BoardDao    (BoardDao.java:348)     - query : 
+ DELETE FROM BOARD 
+ WHERE SEQ = ?     
+
+2022-05-17 16:11:50,266 DEBUG [main] board.BoardDao    (BoardDao.java:349)     - param : BoardVO [seq=5481521, title=제목_900001, contents=내용_900001, readCnt=0, regDt=, regId=pcwk, modDt=, modId=pcwk, toString()=DTO [no=0]]
+2022-05-17 16:11:50,327 DEBUG [main] board.BoardDao    (BoardDao.java:358)     - flag : 1
+2022-05-17 16:11:50,327 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:29)     - PreparedStatement 자원반납
+2022-05-17 16:11:50,327 DEBUG [main] cmn.JDBCUtil      (JDBCUtil.java:41)     - Connection 자원반납
+2022-05-17 16:11:50,328 DEBUG [main] board.BoardMain   (BoardMain.java:38)     - ==================
+2022-05-17 16:11:50,328 DEBUG [main] board.BoardMain   (BoardMain.java:39)     - ======삭제 성공======
+2022-05-17 16:11:50,328 DEBUG [main] board.BoardMain   (BoardMain.java:40)     - ==================
