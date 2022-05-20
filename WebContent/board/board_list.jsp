@@ -59,10 +59,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <link rel="stylesheet"  type="text/css" href="<%=contPath %>/asset/css/jquery-ui.css">
 
-<!--스타일 시트 -->
-<style type="text/css">
-</style>
-<title>게시목록</title>
 <!-- jquery -->
 <script type="text/javascript" src="<%=contPath %>/asset/js/jquery-1.12.4.js"></script>
 <!-- jQuery UI -->

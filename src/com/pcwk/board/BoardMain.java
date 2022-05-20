@@ -152,11 +152,11 @@ public class BoardMain {
 //		main.doUpdate();
 		//조회
 //		main.doSelectOne();
-		
+		//
 //		main.updateReadCnt();
-		
+		//
 //		main.doRetrieve();
-		
+		//목록조회
 //		main.totalCount();
 		
 	}
