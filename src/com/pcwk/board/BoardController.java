@@ -254,7 +254,7 @@ public class BoardController extends HttpServlet {
 		request.setAttribute("totalCnt", totalCnt);
 		
 		// param
-		request.setAttribute("param", param);
+		request.setAttribute("seachVO", param);
 		
 		// 받을 URL : /board/board_list.jsp
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/board/board_list.jsp"); // contextPath 생략
